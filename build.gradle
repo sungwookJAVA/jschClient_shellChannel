@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.hierynomus:sshj:0.30.0'
+    compile "org.slf4j:slf4j-simple:1.7.9"
+    compile group: 'com.jcraft', name: 'jsch', version: '0.1.54'
+
+}
